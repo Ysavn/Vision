@@ -1,13 +1,14 @@
 # Computer Vision Concepts & IMPL
 
 ## Description
-***Every practise/assignment related to computer vision would be added to this repository***
+***Every concept learned related to computer vision would be added here***
 
-- Invert Image
-Code to invert a sample image - 
+- Invert an image
+
+... Code to invert a sample image - 
 ```
 python3 flipImageFilter.py [image_name.png]
 
 ```
-Output - 
+... Output - 
 ![AltText](https://snipboard.io/9O2yAN.jpg)
