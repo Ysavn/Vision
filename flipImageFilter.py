@@ -1,9 +1,11 @@
+import sys
 from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 
 if __name__ == '__main__':
-    img = Image.open("/Users/avneet/Documents/Spring-20/CSCI-5561/CV-Filter3.png").convert('RGB')
+    img_name = sys.argv[1]
+    img = Image.open("Images/" + img_name).convert('RGB')
     img_flip_array = np.array(img)
     for i in range(len(img_flip_array)):
         img_flip_array[i] = 255 - img_flip_array[i]
