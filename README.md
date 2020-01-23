@@ -5,10 +5,10 @@
 
 - Invert an image
 
-... Code to invert a sample image - 
-```
-python3 flipImageFilter.py [image_name.png]
+   Code to invert a sample image - 
+   ```
+   python3 flipImageFilter.py [image_name.png]
 
-```
-... Output - 
-![AltText](https://snipboard.io/9O2yAN.jpg)
+   ```
+   Output - 
+   ![AltText](https://snipboard.io/9O2yAN.jpg)
