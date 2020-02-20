@@ -17,12 +17,15 @@
    
    Run the following command - 
    ```
-   python3 faceDetectionUsingHog.py
+   python3 faceDetectionUsingHogFilter.py
    ```
    
-   Output - 
+   Output -
+   
    Template Image:
+   
    ![AltText](https://snipboard.io/PxjzsC.jpg)
    
    Target Image with face detected:
+   
    ![AltText](https://snipboard.io/peCf5D.jpg)
