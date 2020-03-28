@@ -168,7 +168,6 @@ def classify_knn_bow(label_classes, label_train_list, img_train_list, label_test
 
     pred_labels = predict_knn(feature_train, label_train_list, feature_test, k)
     confusion, accuracy = calcConfusionAndAcc(pred_labels, label_test_list, label_classes)
-    print(accuracy)
     visualize_confusion_matrix(confusion, accuracy, label_classes)
     return confusion, accuracy
 
@@ -202,7 +201,7 @@ def classify_svm_bow(label_classes, label_train_list, img_train_list, label_test
         dense_feature = compute_dsift(img, stride, patch_size)
         for d_feature in dense_feature:
             dense_feature_list = np.vstack((dense_feature_list, d_feature.reshape(1, -1)))
-        print(dense_feature_list.shape)
+
     vocab = build_visual_dictionary(dense_feature_list, bow_size)
     #np.save('vocab_svm.npy', vocab)
     #vocab = np.load('vocab_svm.npy')
@@ -229,7 +228,6 @@ def classify_svm_bow(label_classes, label_train_list, img_train_list, label_test
     pred_labels = predict_svm(feature_train, label_train, feature_test, 15)
     pred_labels = np.asarray([label_classes[pl] for pl in pred_labels])
     confusion, accuracy = calcConfusionAndAcc(pred_labels, label_test_list, label_classes)
-    print(accuracy)
     visualize_confusion_matrix(confusion, accuracy, label_classes)
     return confusion, accuracy
 
